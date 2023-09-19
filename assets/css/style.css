@@ -134,6 +134,15 @@ header:after, section:after, footer:after {
   clear: both;
   content: ""; }
 
+
+.logoImage{
+  width: 500px;
+  height: 600px;
+  object-fit: contain;
+  margin-left: -150px;
+  margin-top: -100px;
+}
+
 /*======= Input Styles =======*/
 input,
 select,
