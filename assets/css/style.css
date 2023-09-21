@@ -1570,11 +1570,12 @@ h1, h2, h3, h4, h5, h6, .bg-text, .coach-filter li, .newsletter-radios {
 .my-25 {
   margin-top: 25px; }
 
-.mt-30,
+
 .my-30 {
   margin-top: 30px; }
 
-.mt-35,
+.mt-35
+,
 .my-35 {
   margin-top: 35px; }
 
