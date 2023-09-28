@@ -3702,7 +3702,7 @@ h1, h2, h3, h4, h5, h6, .bg-text, .coach-filter li, .newsletter-radios {
 .main-header.header-four .logo {
   margin: 0;
   padding: 0;
-  max-width: 42%;
+  max-width: 200px;
   background: transparent; }
 
 .main-header.header-four .menu-btns .nice-select {
@@ -4477,14 +4477,17 @@ h1, h2, h3, h4, h5, h6, .bg-text, .coach-filter li, .newsletter-radios {
 
 /* Feature Six */
 .feature-six-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   background: white;
-  margin-bottom: 30px;
   border: 1px solid #e9eaeb; }
   .feature-six-item .content {
-    padding: 40px 30px 15px; }
+    padding: 20px; }
     .feature-six-item .content .icon {
       height: 50px;
       margin-bottom: 20px; }
@@ -4492,7 +4495,7 @@ h1, h2, h3, h4, h5, h6, .bg-text, .coach-filter li, .newsletter-radios {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 13px 30px;
+    padding: 13px 20px;
     text-decoration: none;
     border-top: 1px solid #e9eaeb; }
   .feature-six-item:hover {
@@ -4503,6 +4506,12 @@ h1, h2, h3, h4, h5, h6, .bg-text, .coach-filter li, .newsletter-radios {
       color: white;
       background: #f2683f;
       border-color: #f2683f; }
+
+
+.service__icon{
+  width: 60px;
+  height: auto;
+}
 
 /*******************************************************/
 /****************** 10. About Section ******************/
