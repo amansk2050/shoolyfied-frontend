@@ -9587,6 +9587,20 @@ blockquote {
 .bg-black .contact-info-widget ul li i {
   color: #FFB113; }
 
+.theme-blue-bg{
+  background-image: linear-gradient(to right, rgba(197, 81, 2, 1), rgba(7, 83, 185, 1));
+}
+
+.grow-effect{
+  scale: 1;
+  transition: all .3 ease-in-out;
+}
+
+.grow-effect:hover{
+  transform: scale(1.2);
+}
+
+
 /* Footer Two */
 .footer-two {
   background: #1e2845; }
