@@ -81,6 +81,15 @@
                               <label>Email</label>
                           </div>
                           <div class="input-wrap">
+                            <input
+                                type="tel"
+                                class="input-field"
+                                autocomplete="off"
+                                required
+                            />
+                            <label>Phone</label>
+                        </div>
+                          <div class="input-wrap">
                               <input
                                   type="password"
                                   minlength="4"
@@ -99,20 +108,32 @@
                                   <input type="radio" name="gender" value="female" required> Group of Schools
                                 </div>
                           </div>
+                          <div class="input-wrap">
+                            <input
+                                type="text"
+                                minlength="4"
+                                class="input-field"
+                                autocomplete="off"
+                                required
+                            />
+                            <label>Name of your Organisation</label>
+                        </div>
                           
                           <!-- Dropdown for selecting country -->
-                          <div class="input-wrap">
-                              <label>Country:</label>
-                              <select name="country" required>
-                                  <option value="" disabled selected>Select your country</option>
-                                  <option value="usa">United States</option>
-                                  <option value="canada">Canada</option>
-                                  <option value="uk">United Kingdom</option>
-                                  <!-- Add more options as needed -->
-                              </select>
+                          <div class="input-wrap flex__form">
+                              <div><label>Your role in the School:</label></div>
+                              <div class="margin-top">
+                                  <select name="country" required>
+                                      <option value="" disabled selected>Select your country</option>
+                                      <option value="usa">United States</option>
+                                      <option value="canada">Canada</option>
+                                      <option value="uk">United Kingdom</option>
+                                      <!-- Add more options as needed -->
+                                  </select>
+                              </div>
                           </div>
                           
-                          <input type="submit" value="Sign Up" class="sign-btn">
+                          <input type="submit" value="Sign Up" class="sign-btn margin-top">
                           <p class="text">
                               By signing up, I agree to the
                               <a href="#">Terms of Services</a> and
