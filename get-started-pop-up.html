@@ -101,9 +101,9 @@
                           </div>
                           
                           <!-- Radio button for gender selection -->
-                          <div class="input-wrap flex__form">
+                          <div class="input-wrap flex__form margin-bottom">
                               <div class="margin-top"><label>Select Organisation Type:</label></div>
-                                <div>
+                                <div class="radio__buttons">
                                   <input type="radio" name="gender" value="male" required> Independent School
                                   <input type="radio" name="gender" value="female" required> Group of Schools
                                 </div>
@@ -120,14 +120,17 @@
                         </div>
                           
                           <!-- Dropdown for selecting country -->
-                          <div class="input-wrap flex__form">
+                          <div class="dropdown__box input-wrap flex__form">
                               <div><label>Your role in the School:</label></div>
-                              <div class="margin-top">
-                                  <select name="country" required>
-                                      <option value="" disabled selected>Select your country</option>
-                                      <option value="usa">United States</option>
-                                      <option value="canada">Canada</option>
-                                      <option value="uk">United Kingdom</option>
+                              <div class="roledropdown margin-top">
+                                  <select name="role" required>
+                                      <option value="" disabled selected>Select Role</option>
+                                      <option value="teacher">Teacher</option>
+                                      <option value="student">Student</option>
+                                      <option value="schoolAdmin">School Admin</option>
+                                      <option value="principal">Principal</option>
+                                      <option value="schoolOwner">School Owner</option>
+                                      <option value="parent">Parent</option>
                                       <!-- Add more options as needed -->
                                   </select>
                               </div>

@@ -176,7 +176,7 @@ label {
 }
 
 .sign-btn:hover {
-  background-color: #8371fd;
+  background-color: #FB653A;
 }
 
 .text {
@@ -403,7 +403,6 @@ main.sign-up-mode .carousel {
 .flex__form{
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -411,4 +410,65 @@ main.sign-up-mode .carousel {
 .margin-top{
   margin-top:30px;
   
+}
+.margin-bottom{
+  margin-bottom:20px;
+  
+}
+
+.radio__buttons{
+  margin-bottom: 20px !important;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  color: #bbb;
+  transition: 0.4s;
+}
+
+/* Role Drop Down Styles in Registration Form */
+/* Style the container div */
+.roledropdown {
+  width: 200px; /* Set the width of the dropdown container */
+  position: relative;
+}
+
+/* Style the select element */
+.roledropdown select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  appearance: none; /* Remove default styles on some browsers */
+  -webkit-appearance: none; /* Remove default styles on older WebKit browsers */
+  -moz-appearance: none; /* Remove default styles on older Firefox browsers */
+  cursor: pointer;
+}
+
+/* Style the selected option */
+.roledropdown select option[selected] {
+  display: none; /* Hide the default "Select Role" option */
+}
+
+/* Style the dropdown arrow */
+.roledropdown::after {
+  content: "▾"; /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Make sure the arrow doesn't interfere with clicking the select */
+}
+
+.roledropdown select option:hover {
+  background-color: #FB653A;
+  color: white; /* Change text color for better visibility */
+}
+
+
+.dropdown__box{
+  margin-top: -10px;
 }
