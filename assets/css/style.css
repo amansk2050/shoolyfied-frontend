@@ -9625,12 +9625,15 @@ blockquote {
 
 .container_foto {
 	background-color: rgba(127, 141, 245, 1);
-	padding: 0;
+	padding: 10px;
 	overflow: hidden;
-	max-width: 300px;
-  height: 320px;
+	max-width: 380px;
+  height: 350px;
 	margin: 5px;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container_foto article {
@@ -9678,7 +9681,7 @@ blockquote {
 .ver_mas {
 	/* background-color: #FEB66C; */
 	position: absolute;
-	width: 100%;
+	width: 90%;
 	height: 250px;
   padding-bottom: 10px;
 	bottom: 0;
@@ -9701,8 +9704,11 @@ blockquote {
 	color: #fff;
 	position: relative;
 	/* margin: 10 auto; */
-	width: 100%;
+	/* width: 90%; */
+  max-width: 280px;
+  /* max-width: 300px; */
 	top: 15px;
+  
 }
 
 
