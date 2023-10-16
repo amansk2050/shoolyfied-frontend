@@ -259,9 +259,7 @@ main.sign-up-mode .carousel {
 
 .text-slider {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 .text-wrap {
@@ -288,6 +286,7 @@ main.sign-up-mode .carousel {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -20px;
 }
 
 .bullets span {

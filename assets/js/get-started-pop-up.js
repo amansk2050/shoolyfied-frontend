@@ -53,3 +53,46 @@ function moveSlider() {
 bullets.forEach((bullet) => {
   bullet.addEventListener("click", moveSlider);
 });
+
+
+
+
+// SCRIPTS FOR CAROUSAL AUTO CHANGE IMAGE
+document.addEventListener("DOMContentLoaded", function () {
+  // Define variables
+  const images = document.querySelectorAll(".image");
+  const textGroups = document.querySelectorAll(".text-group h2");
+  const bullets = document.querySelectorAll(".bullets span");
+
+  let currentIndex = 0;
+
+  // Function to show the current slide
+  function showSlide(index) {
+      // Hide all images and bullets
+      images.forEach(image => image.classList.remove("show"));
+      bullets.forEach(bullet => bullet.classList.remove("active"));
+      textGroups.forEach(text => text.classList.remove("show"));
+
+      // Show the current image, text, and update the bullet
+      images[index].classList.add("show");
+      textGroups[index].classList.add("show");
+      bullets[index].classList.add("active");
+  }
+
+  // Function to switch to the next slide
+  function nextSlide() {
+      currentIndex = (currentIndex + 1) % images.length;
+      showSlide(currentIndex);
+  }
+
+  // Automatically switch slides every 0.5 seconds
+  setInterval(nextSlide, 1500);
+
+  // Event listener for bullet clicks
+  bullets.forEach((bullet, index) => {
+      bullet.addEventListener("click", function () {
+          currentIndex = index;
+          showSlide(currentIndex);
+      });
+  });
+});
