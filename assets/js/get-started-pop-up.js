@@ -13,6 +13,8 @@ const bullets = document.querySelectorAll(".bullets span");
 // Select all image elements with the class "image"
 const images = document.querySelectorAll(".image");
 
+const box = document.querySelectorAll(".box");
+
 // Add event listeners for input fields to add/remove the "active" class
 inputs.forEach((inp) => {
   inp.addEventListener("focus", () => {
@@ -27,6 +29,7 @@ inputs.forEach((inp) => {
 // Add event listeners to toggle buttons to switch sign-up and sign-in modes
 toggle_btn.forEach((btn) => {
   btn.addEventListener("click", () => {
+    // var togle = document.querySelectorAll(".toggle");
     main.classList.toggle("sign-up-mode");
   });
 });

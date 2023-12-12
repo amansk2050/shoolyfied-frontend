@@ -9624,7 +9624,7 @@ blockquote {
 
 
 .container_foto {
-	background-color: rgba(127, 141, 245, 1);
+	background-color: rgba(0, 0, 0, 1);
 	padding: 10px;
 	overflow: hidden;
 	max-width: 380px;
@@ -9744,4 +9744,54 @@ blockquote {
 	-o-transform: translate(0px, 0px);
 	-ms-transform: translate(0px, 0px);
 	opacity: 1;
+}
+
+.full-screen {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 99999;
+  height: 100vh;
+}
+
+.flex-container-center {
+  displaY: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+.full-screen{
+  color: white;
+  position: fixed;
+  top: 0px;
+  
+}
+
+.hidden {
+    display: none;
+}
+
+.margin__top{
+  margin-top: 40px;
+}
+
+.stopScroll{
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  opacity: .3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1); 
+  object-fit: cover;
 }
