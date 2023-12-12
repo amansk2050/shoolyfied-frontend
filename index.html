@@ -34,6 +34,8 @@
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <!--====== Main Style ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- ========== SignUp popup =========== -->
+    <link rel="stylesheet" href="assets/css/get-started-pop-up.css">
     
 </head>
 <body>
@@ -112,14 +114,14 @@
                         </div>
                         
                         <!-- Menu Button -->
-                        <div class="menu-btns d-lg-flex d-none align-items-center">
+                        <div onclick="showPopup()" class="menu-btns d-lg-flex d-none align-items-center">
                             <!-- <select name="select-languages" id="select-languages">
                                 <option value="English">English</option>
                                 <option value="Chinese">Bangla</option>
                                 <option value="Arabic">Arabic</option>
                             </select> -->
                             
-                            <a href="get-started-pop-up.html" class="theme-btn">Get started<i class="fas fa-arrow-right"></i></a>
+                            <a  class="theme-btn">Get started<i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -127,6 +129,175 @@
             <!--End Header Upper-->
         </header>
         <!--End Hidden Sidebar -->
+
+
+        <!--GET STARTED INNER POP UP STARTS-->
+            <div class="full-screen hidden flex-container-center mt-5">
+                <!-- <h2>Let me tell you about this thing!!</h2>
+                <a href="#" onclick="closePopup()">Close Popup!</a> -->
+            
+
+            <div class="box">
+                <div class="inner-box">
+                    <div class="forms-wrap">
+                        <!-- Sign-in Form -->
+                        <form action="index.html" autocomplete="off" class="sign-in-form">
+                            <div class="logo">
+                                <img src="assets/images/logo.png" alt="SchoolyFied">
+                            </div>
+                            <div class="heading">
+                                <h2>Welcome Back</h2>
+                                <h6>Not registered yet?</h6>
+                                <a href="#" class="toggle">Get Started Now</a>
+                            </div>
+                            <div class="actual-form">
+                                <!-- Input fields for Sign In -->
+                                <div class="input-wrap">
+                                    <input
+                                        type="text"
+                                        minlength="4"
+                                        class="input-field"
+                                        autocomplete="off"
+                                        required
+                                    />
+                                    <label>Name</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input
+                                        type="password"
+                                        minlength="4"
+                                        class="input-field"
+                                        autocomplete="off"
+                                        required
+                                    />
+                                    <label>Password</label>
+                                </div>
+                                <input type="submit" value="Sign In" class="sign-btn">
+                                <p onclick="closePopup()" class="text">
+                                    Forgotten your password or your login details?
+                                    <a href="#">Get help</a> signing in
+                                </p>
+                            </div>
+                        </form>
+                        <!-- Sign-up Form -->
+                        <form action="index.html" autocomplete="off" class="sign-up-form">
+                          <div class="heading">
+                              <h2>Get Started</h2>
+                              <h6>Already have an account?</h6>
+                              <a href="#" class="toggle">Sign in</a>
+                          </div>
+                          <div class="actual-form">
+                              <!-- Input fields for Sign Up -->
+                              <div class="input-wrap">
+                                  <input
+                                      type="text"
+                                      minlength="4"
+                                      class="input-field"
+                                      autocomplete="off"
+                                      required
+                                  />
+                                  <label>Name</label>
+                              </div>
+                              <div class="input-wrap">
+                                  <input
+                                      type="email"
+                                      class="input-field"
+                                      autocomplete="off"
+                                      required
+                                  />
+                                  <label>Email</label>
+                              </div>
+                              <div class="input-wrap">
+                                <input
+                                    type="tel"
+                                    class="input-field"
+                                    autocomplete="off"
+                                    required
+                                />
+                                <label>Phone</label>
+                            </div>
+                              <div class="input-wrap">
+                                  <input
+                                      type="password"
+                                      minlength="4"
+                                      class="input-field"
+                                      autocomplete="off"
+                                      required
+                                  />
+                                  <label>Password</label>
+                              </div>
+                              
+                              <!-- Radio button for gender selection -->
+                              <div class="input-wrap flex__form margin-bottom">
+                                  <div class="margin-top"><label>Select Organisation Type:</label></div>
+                                    <div class="radio__buttons">
+                                      <input type="radio" name="gender" value="male" required> Independent School
+                                      <input type="radio" name="gender" value="female" required> Group of Schools
+                                    </div>
+                              </div>
+                              <div class="input-wrap">
+                                <input
+                                    type="text"
+                                    minlength="4"
+                                    class="input-field"
+                                    autocomplete="off"
+                                    required
+                                />
+                                <label>Name of your Organisation</label>
+                            </div>
+                              
+                              <!-- Dropdown for selecting country -->
+                              <div class="dropdown__box input-wrap flex__form">
+                                  <div><label>Your role in the School:</label></div>
+                                  <div class="roledropdown margin-top">
+                                      <select name="role" required>
+                                          <option value="" disabled selected>Select Role</option>
+                                          <option value="teacher">Teacher</option>
+                                          <option value="student">Student</option>
+                                          <option value="schoolAdmin">School Admin</option>
+                                          <option value="principal">Principal</option>
+                                          <option value="schoolOwner">School Owner</option>
+                                          <option value="parent">Parent</option>
+                                          <!-- Add more options as needed -->
+                                      </select>
+                                  </div>
+                              </div>
+                              
+                              <input type="submit" value="Sign Up" class="sign-btn margin-top">
+                              <p class="text">
+                                  By signing up, I agree to the
+                                  <a href="#">Terms of Services</a> and
+                                  <a href="#">Privacy Policy</a>
+                              </p>
+                          </div>
+                      </form>
+                    </div>
+                    <!-- Carousel section -->
+                    <div class="carousel">
+                        <div class="images-wrapper">
+                            <img src="assets/images/image1.png" class="image img-1 show" alt="">
+                            <img src="assets/images/image2.png" class="image img-2" alt="">
+                            <img src="assets/images/image3.png" class="image img-3" alt="">
+                        </div>
+                        <div class="text-slider">
+                            <div class="text-wrap">
+                                <div class="text-group">
+                                    <h2>Digitize your school in minutes</h2>
+                                    <h2>Demo Texts 1</h2>
+                                    <h2>Demo Texts 2</h2>
+                                </div>
+                            </div>
+                            <div class="bullets">
+                                <span class="active" data-value="1"></span>
+                                <span data-value="2"></span>
+                                <span data-value="3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--GET STARTED INNER POP UP ENDS-->
 
         
         <!-- Hero Section Start -->
@@ -165,8 +336,8 @@
                                 <a href="contact.html" class="theme-btn mt-10">Get started <i class="fas fa-arrow-right"></i></a>
                                 <a href="course-grid.html" class="theme-btn style-two mt-10">our courses <i class="fas fa-arrow-right"></i></a>
                             </div> -->
-                            <div class="menu-btns d-lg-flex d-none align-items-center">
-                               <a href="get-started-pop-up.html" class="theme-btn">Get started<i class="fas fa-arrow-right"></i></a>
+                            <div onclick="showPopup()" class="menu-btns d-lg-flex d-none align-items-center">
+                               <a class="theme-btn">Get started<i class="fas fa-arrow-right"></i></a>
 
                             </div>
                         </div>
@@ -201,7 +372,8 @@
 <!-- SERVICES FIRST ROW -->
                 <div class="row mb-55 mt-100">
                     <!-- card1 -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto ">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="overlay">
                         <div class="ver_mas text-center">
                            <span  class="lnr">This feature allows schools to register themselves on the platform. During registration, schools need to provide essential information such as the school name, address, contact details, and other necessary credentials. Upon successful registration, the school will receive login credentials to access the software.</span>
                         </div>
@@ -212,11 +384,11 @@
                            <h2>Effortless School Registration:</h2>
                            <!-- <h4>Descripción corta de la imagen en cuestión</h4> -->
                         </article>
-                        <!-- <img src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg" alt=""> -->
                     </div>
 
                     <!-- card2 -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto ">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="overlay">
                         <div class="ver_mas text-center">
                            <span  class="lnr">Once registered, schools can use this feature to add various members to the system. These members include students, teachers, administrative staff, board members, and any other higher authorities associated with the school. Each member will have a designated role and access level within the software</span>
                         </div>
@@ -231,7 +403,8 @@
                     </div>
 
                     <!-- card3 -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto ">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
+                        <img src="https://images.unsplash.com/photo-1561409992-40604a3debb5?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="overlay">
                         <div class="ver_mas text-center">
                            <span  class="lnr">This feature enables the admin to set up attendance tracking for different roles within the school, such as students, teachers, and staff. Teachers can take attendance in their classes, and the system will record the data. For students, the admin can choose whether the live attendance information should be visible to parents or not.</span>
                         </div>
@@ -246,7 +419,8 @@
                     </div>
 
                     <!-- card4 -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto ">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
+                        <img src="https://images.unsplash.com/photo-1565022536102-f7645c84354a?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="overlay">
                         <div class="ver_mas text-center">
                            <span  class="lnr">Schools have the option to create their own syllabus or use predefined syllabi based on the board and class they follow. Teachers can update and manage the syllabus for each class through the software. The admin or principal can review the progress of each class's syllabus through their dashboard. </span>
                         </div>
@@ -261,7 +435,8 @@
                     </div>
 
                     <!-- card5 -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto ">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
+                        <img src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="overlay">
                         <div class="ver_mas text-center">
                            <span  class="lnr">Schools have the option to create their own syllabus or use predefined syllabi based on the board and class they follow. Teachers can update and manage the syllabus for each class through the software. The admin or principal can review the progress of each class's syllabus through their dashboard. </span>
                         </div>
@@ -276,7 +451,8 @@
                     </div>
 
                     <!-- card6 -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto ">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
+                        <img src="https://images.unsplash.com/photo-1634745646763-1f1183bb91c1?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="overlay">
                         <div class="ver_mas text-center">
                             <h1 class="text-white font-weight-bold ">Check out other features <span></span></h1>
                            <!-- <span  class="lnr">Schools have the option to create their own syllabus or use predefined syllabi based on the board and class they follow. Teachers can update and manage the syllabus for each class through the software. The admin or principal can review the progress of each class's syllabus through their dashboard. </span> -->
@@ -807,6 +983,8 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom script -->
     <script src="assets/js/script.js"></script>
+    <!-- for signIn Register popup -->
+    <script src="assets/js/get-started-pop-up.js"></script>
 
 </body>
 </html>

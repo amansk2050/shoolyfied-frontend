@@ -578,3 +578,16 @@
     });
 
 })(window.jQuery);
+
+
+//// for popup 
+const popup = document.querySelector('.full-screen');
+        function showPopup(){
+        popup.classList.remove('hidden');
+        document.body.classList.add('stopScroll'); 
+        }
+
+        function closePopup(){
+        popup.classList.add('hidden');
+        document.body.classList.remove('stopScroll');
+        }
