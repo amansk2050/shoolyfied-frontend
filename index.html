@@ -102,7 +102,7 @@
                                     <ul class="navigation clearfix">
                                         
                                         <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">Services</a></li>
+                                        <li><a onclick="scrollToServicesSection()">Services</a></li>
                                         <li><a onclick="scrollToAboutUs()">About us</a></li>
                                         <li><a onclick="scrollToContactUsSection()">Contact us</a></li>
                                         <li><a onclick="scrollToTestimonialSection()">Stories</a></li>
@@ -370,10 +370,115 @@
                         </div>
                     </div>
                 </div>
+
+
+                <!-- services Features Section Start -->
+        <section id="services" class="features-section-three rel z-1 pt-110 rpt-85 pb-100 rpb-70">
+            <div class="container">
+               <div class="section-title text-center mb-55">
+                    <span class="sub-title-two" style="font-size: 40px;">Services</span>
+                    <h2>Here are our Offerings.</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="feature-three-item wow fadeInUp delay-0-2s">
+                            <div class="icon">
+                                <i class="flaticon-reading-book"></i>
+                            </div>
+                            <h4 class="heding-featurecard">School Registration:</h4>
+                            <p id="featuredCard1" class="feature-hover">This feature allows schools to register themselves on the platform. During registration, schools need to provide essential information such as the school name, address, contact details, and other necessary credentials. Upon successful registration, the school will receive login credentials to access the software.</p>
+                            <img alt="arrowDown" onclick="changeStyles('featuredCard1', 'arrow1')" id="arrow1" style="height: 25px; width: 25px;" src="./assets/images/down-circular-button.svg"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="feature-three-item wow fadeInUp delay-0-4s">
+                            <div class="icon">
+                                <img src="assets/images/features/icon7.png" alt="Icon">
+                            </div>
+                            <h4 class="heding-featurecard">Member Management:</h4>
+                            <p id="featuredCard2" class="feature-hover">Once registered, schools can use this feature to add various members to the system. These members include students, teachers, administrative staff, board members, and any other higher authorities associated with the school. Each member will have a designated role and access level within the software.</p>
+                            <img alt="arrowDown" onclick="changeStyles('featuredCard2', 'arrow2')" id="arrow2" style="height: 25px; width: 25px;" src="./assets/images/down-circular-button.svg"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="feature-three-item wow fadeInUp delay-0-6s">
+                            <div class="icon">
+                                <img src="assets/images/features/icon8.png" alt="Icon">
+                            </div>
+                            <h4 class="heding-featurecard">Attendance Tracking:</h4>
+                            <p id="featuredCard3" class="feature-hover">This feature enables the admin to set up attendance tracking for different roles within the school, such as students, teachers, and staff. Teachers can take attendance in their classes, and the system will record the data. For students, the admin can choose whether the live attendance information should be visible to parents or not.</p>
+                            <img alt="arrowDown" onclick="changeStyles('featuredCard3', 'arrow3')" id="arrow3" style="height: 25px; width: 25px;" src="./assets/images/down-circular-button.svg"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="feature-three-item wow fadeInUp delay-0-8s">
+                            <div class="icon">
+                                <img src="assets/images/features/icon9.png" alt="Icon">
+                            </div>
+                            <h4 class="heding-featurecard">Syllabus Tracking:</h4>
+                            <p id="featuredCard4" class="feature-hover">Schools have the option to create their own syllabus or use predefined syllabi based on the board and class they follow. Teachers can update and manage the syllabus for each class through the software. The admin or principal can review the progress of each class's syllabus through their dashboard.</p>
+                            <img alt="arrowDown" onclick="changeStyles('featuredCard4', 'arrow4')" id="arrow4" style="height: 25px; width: 25px;" src="./assets/images/down-circular-button.svg"/>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="feature-three-item wow fadeInUp delay-0-2s">
+                                <div class="icon">
+                                    <i class="flaticon-reading-book"></i>
+                                </div>
+                                <h4 class="heding-featurecard">Announcement/Notice Feature:</h4>
+                                <p id="featuredCard5" class="feature-hover">The principal or assigned roles can use this feature to post announcements and notices. They can select specific recipients (e.g., teachers, staff) to whom the notification should be sent. This helps in efficiently disseminating important information throughout the school.</p>
+                                <img alt="arrowDown" onclick="changeStyles('featuredCard5', 'arrow5')" id="arrow5" style="height: 25px; width: 25px;" src="./assets/images/down-circular-button.svg"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="feature-three-item wow fadeInUp delay-0-4s">
+                                <div class="icon">
+                                    <img src="assets/images/features/icon7.png" alt="Icon">
+                                </div>
+                                <h4 class="heding-featurecard">Student Performance Tracking:</h4>
+                                <p id="featuredCard6" class="feature-hover">With this feature, the school can track and evaluate the performance of student. It may include factors such as teacher feedback, achievements in competition, class test , others.</p>
+                                <img alt="arrowDown" onclick="changeStyles('featuredCard6', 'arrow6')" id="arrow6" style="height: 25px; width: 25px;" src="./assets/images/down-circular-button.svg"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="feature-three-item wow fadeInUp delay-0-6s">
+                                <div class="icon">
+                                    <img src="assets/images/features/icon8.png" alt="Icon">
+                                </div>
+                                <h4 class="heding-featurecard">Hire Quickly:</h4>
+                                <p id="featuredCard7" class="feature-hover">Sed ut persiciatis omnis natus voluptate accsantie doloreue laudantium</p>
+                                <img alt="arrowDown" onclick="changeStyles('featuredCard7', 'arrow7')" id="arrow7" style="height: 25px; width: 25px;" src="./assets/images/down-circular-button.svg"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="feature-three-item wow fadeInUp delay-0-8s">
+                                <div class="icon">
+                                    <img src="assets/images/features/icon9.png" alt="Icon">
+                                </div>
+                                <h4 class="heding-featurecard">Exam Conducting and Result Tracking:</h4>
+                                <p id="featuredCard8" class="feature-hover">With this feature, the school can conduct exams and record the results for each student. Teachers can input the exam scores into the system, and the software will generate comprehensive reports to evaluate student performance.</p>
+                                <img alt="arrowDown" onclick="changeStyles('featuredCard8', 'arrow8')" id="arrow8" style="height: 25px; width: 25px;" src="./assets/images/down-circular-button.svg"/>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-3 col-sm-6">
+                            <div class="feature-three-item wow fadeInUp delay-0-8s">
+                                <div class="icon">
+                                    <img src="assets/images/features/icon9.png" alt="Icon">
+                                </div>
+                                <h4 style="height: 40px;">Video Tutorials</h4>
+                                <p>Sed ut persiciatis omnis natus voluptate accsantie doloreue laudantium</p>
+                            </div>
+                        </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- services Section End -->
+                
 <!-- SERVICES FIRST ROW -->
-                <div class="row mb-55 mt-100">
+                <!-- <div class="row mb-55 mt-100"> -->
                     <!-- card1 -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
+                    <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
                         <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="overlay">
                         <div class="ver_mas text-center">
                            <span  class="lnr">This feature allows schools to register themselves on the platform. During registration, schools need to provide essential information such as the school name, address, contact details, and other necessary credentials. Upon successful registration, the school will receive login credentials to access the software.</span>
@@ -383,12 +488,12 @@
                                 <img src="assets/images/features/feature-five-icon1.png" alt="Icon">
                             </div>
                            <h2>Effortless School Registration:</h2>
-                           <!-- <h4>Descripción corta de la imagen en cuestión</h4> -->
+                           
                         </article>
-                    </div>
+                    </div> -->
 
                     <!-- card2 -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
+                    <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
                         <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="overlay">
                         <div class="ver_mas text-center">
                            <span  class="lnr">Once registered, schools can use this feature to add various members to the system. These members include students, teachers, administrative staff, board members, and any other higher authorities associated with the school. Each member will have a designated role and access level within the software</span>
@@ -398,13 +503,11 @@
                                 <img src="assets/images/features/feature-five-icon2.png" alt="Icon">
                             </div>
                            <h2>Member Management:</h2>
-                           <!-- <h4>Descripción corta de la imagen en cuestión</h4> -->
                         </article>
-                        <!-- <img src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg" alt=""> -->
-                    </div>
+                    </div> -->
 
                     <!-- card3 -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
+                    <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
                         <img src="https://images.unsplash.com/photo-1561409992-40604a3debb5?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="overlay">
                         <div class="ver_mas text-center">
                            <span  class="lnr">This feature enables the admin to set up attendance tracking for different roles within the school, such as students, teachers, and staff. Teachers can take attendance in their classes, and the system will record the data. For students, the admin can choose whether the live attendance information should be visible to parents or not.</span>
@@ -414,13 +517,11 @@
                                 <img src="assets/images/features/feature-five-icon3.png" alt="Icon">
                             </div>
                            <h2>Attendance Tracking:</h2>
-                           <!-- <h4>Descripción corta de la imagen en cuestión</h4> -->
                         </article>
-                        <!-- <img src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg" alt=""> -->
-                    </div>
+                    </div> -->
 
                     <!-- card4 -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
+                    <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
                         <img src="https://images.unsplash.com/photo-1565022536102-f7645c84354a?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="overlay">
                         <div class="ver_mas text-center">
                            <span  class="lnr">Schools have the option to create their own syllabus or use predefined syllabi based on the board and class they follow. Teachers can update and manage the syllabus for each class through the software. The admin or principal can review the progress of each class's syllabus through their dashboard. </span>
@@ -430,13 +531,11 @@
                                 <img src="assets/images/features/feature-five-icon4.png" alt="Icon">
                             </div>
                            <h2>Syllabus Tracking:</h2>
-                           <!-- <h4>Descripción corta de la imagen en cuestión</h4> -->
                         </article>
-                        <!-- <img src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg" alt=""> -->
-                    </div>
+                    </div> -->
 
                     <!-- card5 -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
+                    <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
                         <img src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="overlay">
                         <div class="ver_mas text-center">
                            <span  class="lnr">Schools have the option to create their own syllabus or use predefined syllabi based on the board and class they follow. Teachers can update and manage the syllabus for each class through the software. The admin or principal can review the progress of each class's syllabus through their dashboard. </span>
@@ -446,27 +545,20 @@
                                 <img src="assets/images/features/icon2.png" alt="Icon">
                             </div>
                            <h2>Announcement/Notice Feature:</h2>
-                           <!-- <h4>Descripción corta de la imagen en cuestión</h4> -->
                         </article>
-                        <!-- <img src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg" alt=""> -->
-                    </div>
+                    </div> -->
 
                     <!-- card6 -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
+                    <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto p-0">
                         <img src="https://images.unsplash.com/photo-1634745646763-1f1183bb91c1?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="overlay">
                         <div class="ver_mas text-center">
                             <h1 class="text-white font-weight-bold ">Check out other features <span></span></h1>
-                           <!-- <span  class="lnr">Schools have the option to create their own syllabus or use predefined syllabi based on the board and class they follow. Teachers can update and manage the syllabus for each class through the software. The admin or principal can review the progress of each class's syllabus through their dashboard. </span> -->
                         </div>
                         <article class="text-left">
-                            <!-- <div class="icon service__icon">
-                                <img src="assets/images/features/feature-five-icon3.png" alt="Icon">
-                            </div> -->
+                            
                            <h2>More Features</h2>
-                           <!-- <h4>Descripción corta de la imagen en cuestión</h4> -->
                         </article>
-                        <!-- <img src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg" alt=""> -->
-                    </div>
+                    </div> -->
 
 
                     <!-- /// old card -->
@@ -609,32 +701,32 @@
         <!-- Testimonials Section End -->
 
         <!-- Contact Form Start -->
-        <section id="contactUsSection" class="contact-form-area my-80 rel wow fadeInUp delay-0-2s" style="width: 80%;">
-            <div class="container" style="width: 80%; margin-top: -300px;">
-                <form id="contact-form" class="contact-form p-50 z-1 rel" name="contact-form" action="#" method="post">
-                   <div class="section-title text-center mb-50">
+        <section id="contactUsSection" class="delay-0-2s" >
+            <div class="contactusContainer" >
+                <div id="contact-form" class="mt-100" name="contact-form" action="#" method="post">
+                   <div class="section-title text-center mb-50 ">
                        <span class="sub-title-two">Send Us Message</span>
                        <h2>Have Any Questions! Say Hello</h2>
                    </div>
-                    <div class="row mt-25">
+                    <div class="row mt-25 flexcenter">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" id="full-name" name="full-name" class="form-control" value="" placeholder="Full Name" required="">
+                                <input type="text" id="full-name" name="full-name" class="form-control contact-us-input1" value="" placeholder="Full Name" required="">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="email" id="email-address" name="email" class="form-control" value="" placeholder="Email Address" required="">
+                                <input type="email" id="email-address" name="email" class="form-control contact-us-input1" value="" placeholder="Email Address" required="">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="text" id="phone" name="phone" class="form-control" value="" placeholder="Phone Number" required="">
+                                <input type="text" id="phone" name="phone" class="form-control contact-us-input1" value="" placeholder="Phone Number" required="">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <textarea name="message" id="message" class="form-control" rows="4" placeholder="Write Message" required=""></textarea>
+                                <textarea name="message" id="message" class="form-control contact-us-input2" rows="4" placeholder="Write Message" required=""></textarea>
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -643,7 +735,7 @@
                             </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </section>
         <!-- Contact Form End -->
@@ -1152,6 +1244,12 @@
         }
       </script>
       <script>
+        function scrollToServicesSection() {
+          const section = document.getElementById('services');
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      </script>
+      <script>
         function scrollToTestimonialSection() {
           const section = document.getElementById('testimonialsSection');
           section.scrollIntoView({ behavior: 'smooth' });
@@ -1161,6 +1259,39 @@
         function scrollToContactUsSection() {
           const section = document.getElementById('contactUsSection');
           section.scrollIntoView({ behavior: 'smooth' });
+        }
+      </script>
+      <script>
+        function changeStyles(elementId, arrowId) {
+          var element = document.getElementById(elementId);
+        //   var arrowElemt = document.getElementById(arrowId);
+          var image = document.getElementById(arrowId);
+          setTimeout(function() {
+            if(element.style.height=='auto'){
+            element.style.height = '85px';
+            element.style.overflow = 'hidden';
+            // element.style.zIndex = 10;
+          }
+          else{
+            element.style.height = 'auto';
+            element.style.overflow = 'auto';
+            // element.style.zIndex = 0;
+            }
+            }, 10);
+          
+            if (image.alt == 'arrowDown') {
+                image.src = "./assets/images/up-circular-interface-button.svg";
+                image.alt = 'arrowUp'
+                image.id = arrowId
+                console.log(image.alt)
+            } else {
+                image.src = "./assets/images/down-circular-button.svg";
+                image.alt = 'arrowDown'
+                console.log(image.alt)
+            }
+          
+          
+
         }
       </script>
 

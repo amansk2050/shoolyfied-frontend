@@ -9795,3 +9795,53 @@ blockquote {
   background-color: rgba(0, 0, 0, 1); 
   object-fit: cover;
 }
+
+.feature-hover{
+  height: 85px;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+  /* margin-top: 10px; */
+}
+
+/* .feature-hover:hover{
+  height: auto;
+  overflow: auto;
+} */
+
+.heding-featurecard{
+  height: 40px;
+  margin-bottom: 10px;
+  width: 80%;
+  font-size: 16px;
+}
+
+.form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  
+}
+
+.contact-us-input1{
+  width: 100%;
+
+}
+.contact-us-input2{
+  width: 100%;
+  
+}
+
+.contactusContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+  
+}
+
+.flexcenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
