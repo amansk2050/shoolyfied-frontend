@@ -105,7 +105,7 @@
                                         <li><a style="font-weight: 500;" onclick="scrollToServicesSection()">Services</a></li>
                                         <li><a style="font-weight: 500;" onclick="scrollToAboutUs()">About us</a></li>
                                         <li><a style="font-weight: 500;" onclick="scrollToContactUsSection()">Contact us</a></li>
-                                        <li><a style="font-weight: 500;" onclick="scrollToTestimonialSection()">Stories</a></li>
+                                        <li><a style="font-weight: 500;" onclick="scrollToTestimonialSection()">Resources</a></li>
                                         
                                     </ul>
                                 </div>
@@ -133,12 +133,20 @@
 
 
         <!--GET STARTED INNER POP UP STARTS-->
-            <div class="full-screen hidden flex-container-center mt-5">
+            <div  class="full-screen hidden flex-container-center ">
                 <!-- <h2>Let me tell you about this thing!!</h2>
                 <a href="#" onclick="closePopup()">Close Popup!</a> -->
-            
+            <div onclick="closePopup()" style="width: 100%; height: 100%; display: flex; background-color: rgba(88, 84, 84, 0.252); ">
 
-            <div class="box">
+            </div>
+
+            <div class="box" style="margin-top: -50%;">
+                <div style="display: flex; justify-content: flex-start; align-items: flex-start; margin-left: 40px; margin-top: 40px; ">
+                    <div onclick="closePopup();" style="border-radius: 20px; background-color: black; height: 40px; width: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 20;">
+                        <img  style="height: 25px; width: 25px;" src="./assets/images/close.png"/>
+                    </div>
+                    
+                </div>
                 <div class="inner-box">
                     <div class="forms-wrap">
                         <!-- Sign-in Form -->
@@ -366,9 +374,14 @@
                     </div>
                     <div class="col-lg-5">
                         <div style="font-weight: 500;" class=" freature-six-right pt-50 rpt-0 wow fadeInUp delay-0-4s">
-                            <p>Unlock the Future of School Management! Revolutionize your school's administration with our cutting-edge software, simplifying tasks and enhancing efficiency. Imagine a seamless blend of innovation and convenience at your fingertips.
+                            <p>Unlock the Future of School Management! Revolutionize your school's administration with our cutting-edge software, simplifying tasks and enhancing efficiency. Imagine a seamless blend of innovation and convenience at your fingertips. <span class="readmoreStyle" id="moreText">Be a Part of the Educational Redemption! Join us in rewriting the narrative for schools burdened by paperwork. <br/>Our school management software transforms chaos into order, empowering educators to focus on teaching, not bureaucracy.<br/> Stand with us in reshaping the future of education. Sign up for a free trial and contribute to the revival of schools everywhere, ensuring a brighter tomorrow for students.</span></p>
+                            <div class="readmore-button" onclick="toggleReadMore()" id="readMoreBtn">
+                                Read more
+                            </div>
+                            <!-- <button sty onclick="toggleReadMore()" id="readMoreBtn">Read more</button> -->
+                            <!-- <p>Unlock the Future of School Management! Revolutionize your school's administration with our cutting-edge software, simplifying tasks and enhancing efficiency. Imagine a seamless blend of innovation and convenience at your fingertips.
                                 <br/>Be a Part of the Educational Redemption! Join us in rewriting the narrative for schools burdened by paperwork. <br/>Our school management software transforms chaos into order, empowering educators to focus on teaching, not bureaucracy.<br/> Stand with us in reshaping the future of education. Sign up for a free trial and contribute to the revival of schools everywhere, ensuring a brighter tomorrow for students.
-                                </p>
+                                </p> -->
                         </div>
                     </div>
                 </div>
@@ -382,16 +395,7 @@
                     <h2>Here are our Offerings.</h2>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="feature-three-item wow fadeInUp delay-0-2s">
-                            <div class="icon">
-                                <i class="flaticon-reading-book"></i>
-                            </div>
-                            <h4 class="heding-featurecard">School Registration:</h4>
-                            <p id="featuredCard1" class="feature-hover">This feature allows schools to register themselves on the platform. During registration, schools need to provide essential information such as the school name, address, contact details, and other necessary credentials. Upon successful registration, the school will receive login credentials to access the software.</p>
-                            <img alt="arrowDown" onclick="changeStyles('featuredCard1', 'arrow1')" id="arrow1" style="height: 25px; width: 25px;" src="./assets/images/down-circular-button.svg"/>
-                        </div>
-                    </div>
+                    
                     <div class="col-lg-3 col-sm-6">
                         <div class="feature-three-item wow fadeInUp delay-0-4s">
                             <div class="icon">
@@ -422,17 +426,18 @@
                             <img alt="arrowDown" onclick="changeStyles('featuredCard4', 'arrow4')" id="arrow4" style="height: 25px; width: 25px;" src="./assets/images/down-circular-button.svg"/>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="feature-three-item wow fadeInUp delay-0-2s">
-                                <div class="icon">
-                                    <i class="flaticon-reading-book"></i>
-                                </div>
-                                <h4 class="heding-featurecard">Announcement/Notice Feature:</h4>
-                                <p id="featuredCard5" class="feature-hover">The principal or assigned roles can use this feature to post announcements and notices. They can select specific recipients (e.g., teachers, staff) to whom the notification should be sent. This helps in efficiently disseminating important information throughout the school.</p>
-                                <img alt="arrowDown" onclick="changeStyles('featuredCard5', 'arrow5')" id="arrow5" style="height: 25px; width: 25px;" src="./assets/images/down-circular-button.svg"/>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="feature-three-item wow fadeInUp delay-0-2s">
+                            <div class="icon">
+                                <i class="flaticon-reading-book"></i>
                             </div>
+                            <h4 class="heding-featurecard">Announcement/Notice Feature:</h4>
+                            <p id="featuredCard5" class="feature-hover">The principal or assigned roles can use this feature to post announcements and notices. They can select specific recipients (e.g., teachers, staff) to whom the notification should be sent. This helps in efficiently disseminating important information throughout the school.</p>
+                            <img alt="arrowDown" onclick="changeStyles('featuredCard5', 'arrow5')" id="arrow5" style="height: 25px; width: 25px;" src="./assets/images/down-circular-button.svg"/>
                         </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        
                         <div class="col-lg-3 col-sm-6">
                             <div class="feature-three-item wow fadeInUp delay-0-4s">
                                 <div class="icon">
@@ -448,7 +453,7 @@
                                 <div class="icon">
                                     <img src="assets/images/features/icon8.png" alt="Icon">
                                 </div>
-                                <h4 class="heding-featurecard">Hire Quickly:</h4>
+                                <h4 class="heding-featurecard">Teacher Performance Tracking:</h4>
                                 <p id="featuredCard7" class="feature-hover">Sed ut persiciatis omnis natus voluptate accsantie doloreue laudantium</p>
                                 <img alt="arrowDown" onclick="changeStyles('featuredCard7', 'arrow7')" id="arrow7" style="height: 25px; width: 25px;" src="./assets/images/down-circular-button.svg"/>
                             </div>
@@ -461,6 +466,17 @@
                                 <h4 class="heding-featurecard">Exam Conducting and Result Tracking:</h4>
                                 <p id="featuredCard8" class="feature-hover">With this feature, the school can conduct exams and record the results for each student. Teachers can input the exam scores into the system, and the software will generate comprehensive reports to evaluate student performance.</p>
                                 <img alt="arrowDown" onclick="changeStyles('featuredCard8', 'arrow8')" id="arrow8" style="height: 25px; width: 25px;" src="./assets/images/down-circular-button.svg"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="feature-three-item wow fadeInUp delay-0-2s">
+                                <div class="icon">
+                                    <i class="flaticon-reading-book"></i>
+                                </div>
+                                <h4 class="heding-featurecard">More Services</h4>
+                                <p id="featuredCard1" class="feature-hover"><span style="color: #f2683f; font-weight: 600;">Click </span> to Explore the key services that have been widely adopted by countless schools and institutions.</p>
+                                <!-- <img alt="arrowDown" onclick="changeStyles('featuredCard1', 'arrow1')" id="arrow1" style="height: 25px; width: 25px;" src="./assets/images/down-circular-button.svg"/> -->
+                                <div style="height: 25px;"></div>
                             </div>
                         </div>
                         <!-- <div class="col-lg-3 col-sm-6">
@@ -1296,7 +1312,20 @@
 
         }
       </script>
-
+        <script>
+            function toggleReadMore() {
+              var moreText = document.getElementById("moreText");
+              var readMoreBtn = document.getElementById("readMoreBtn");
+        
+              if (moreText.style.display === "none") {
+                moreText.style.display = "inline";
+                readMoreBtn.innerHTML = "Read less";
+              } else {
+                moreText.style.display = "none";
+                readMoreBtn.innerHTML = "Read more";
+              }
+            }
+          </script>
 
 </body>
 </html>
