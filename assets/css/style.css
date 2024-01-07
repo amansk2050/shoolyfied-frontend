@@ -4362,6 +4362,7 @@ h1, h2, h3, h4, h5, h6, .bg-text, .coach-filter li, .newsletter-radios {
     box-shadow: 10px 0 60px rgba(76, 76, 76, 0.1); }
   .feature-three-item .icon {
     height: 50px;
+    width: 65px;
     margin-bottom: 30px;
     color: #f2683f; }
     .feature-three-item .icon i {
@@ -4757,7 +4758,7 @@ h1, h2, h3, h4, h5, h6, .bg-text, .coach-filter li, .newsletter-radios {
     -ms-flex-direction: column;
     flex-direction: column;
     font-family: "Raleway", sans-serif;
-    background: #204ecf;
+    background: #5a362b82;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
