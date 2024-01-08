@@ -11,7 +11,7 @@ const main = document.querySelector("main");
 const bullets = document.querySelectorAll(".bullets span");
 
 // Select all image elements with the class "image"
-const images = document.querySelectorAll(".image");
+const images = document.querySelectorAll(".imagePop");
 
 const box = document.querySelectorAll(".box");
 
@@ -63,7 +63,7 @@ bullets.forEach((bullet) => {
 // SCRIPTS FOR CAROUSAL AUTO CHANGE IMAGE
 document.addEventListener("DOMContentLoaded", function () {
   // Define variables
-  const images = document.querySelectorAll(".image");
+  const images = document.querySelectorAll(".imagePop");
   const textGroups = document.querySelectorAll(".text-group h2");
   const bullets = document.querySelectorAll(".bullets span");
 
