@@ -7294,6 +7294,9 @@ blockquote {
 /*******************************************************/
 /********************* 19. Counter *********************/
 /*******************************************************/
+.count-subtext{
+  font-size: 12px;
+}
 .counter-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9825,13 +9828,10 @@ blockquote {
 }
 
 .contact-us-input1{
-  width: 70%;
-  margin-left: 20px;
-
+  width: 100%;
 }
 .contact-us-input2{
-  width: 90%;
-  margin-left: 20px;
+  width: 100%;
 }
 
 .contactusContainer{
