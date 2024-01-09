@@ -2,7 +2,7 @@
 const inputs = document.querySelectorAll(".input-field");
 
 // Select all elements with the class "toggle"
-const toggle_btn = document.querySelectorAll(".toggle");
+const toggle_btn = document.querySelectorAll("#toggle");
 
 // Select the main container element
 const main = document.querySelector("main");
@@ -29,7 +29,9 @@ inputs.forEach((inp) => {
 // Add event listeners to toggle buttons to switch sign-up and sign-in modes
 toggle_btn.forEach((btn) => {
   btn.addEventListener("click", () => {
-    // var togle = document.querySelectorAll(".toggle");
+    console.log("here")
+    // var togle = document.querySelectorAll("#toggle");
+    // toggle_btn.classList.remove("sign-up-mode");
     main.classList.toggle("sign-up-mode");
   });
 });
