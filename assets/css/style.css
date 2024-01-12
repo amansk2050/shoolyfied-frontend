@@ -9877,6 +9877,18 @@ blockquote {
   /* border: 1px solid #ccc; */
   /* margin: 20px; */
   color: rgb(9, 95, 223);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 /* .readmoreStyle{
 
