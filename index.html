@@ -234,7 +234,7 @@
                                     </div>
 
                                     <!-- Dropdown for selecting country -->
-                                    <div class="dropdown__box input-wrap flex__form">
+                                    <div style="height: 40px;" class="dropdown__box input-wrap flex__form">
                                         <div><label>Your role in the School:</label></div>
                                         <div class="roledropdown margin-top">
                                             <select name="role" required>
@@ -318,8 +318,8 @@
                         <div class="hero-content-three pt-10 pb-100 rpt-40">
                             <span class="hero-sub-title mb-10 wow fadeInUp delay-0-2s"><span>1000+</span>
                                 Schools/Institutes</span>
-                            <h1 class="mb-25 wow fadeInUp delay-0-4s">Creating <span>visionary</span> schools for future
-                                with better management.</h1>
+                            <h1 class="mb-25 wow fadeInUp delay-0-4s">Creating <span>visionary</span> <a id="changingText">schools</a>  for future
+                                with better management and <a style="color: rgb(9, 95, 223);">AI Support</a>.</h1>
                             <!-- <ul class="list-style-one wow fadeInUp delay-0-6s">
                                 <li>Experts Advisors</li>
                                 <li>538+ Courses</li>
@@ -401,7 +401,7 @@
                                     <div class="content">
                                         <h4> SchoolyFied for Coaching Centres</h4>
                                         <p>Powerful tool for coaching centre.</p>
-                                        <a onclick="showPopup()" class="theme-btn style-two">Join with us <i
+                                        <a onclick="showPopup()" class="theme-btn style-two mt-25" >Coming soon <i
                                                 class="fas fa-arrow-right"></i></a>
                                     </div>
                                     <div
@@ -529,12 +529,15 @@
                                         <div class="icon">
                                             <img src="assets/images/features/icon14.png" alt="Icon">
                                         </div>
-                                        <h4 class="heding-featurecard">More Services</h4>
-                                        <p id="featuredCard1" class="feature-hover"><span
-                                                style="color: #f2683f; font-weight: 600;"><a
-                                                    href="https://calendly.com/ashiniqbal">Click</a> </span> here to
-                                            schedule a brief meeting with us to discuss about the other Services we
-                                            offer.</p>
+                                        <h4 class="heding-featurecard">More Services</h4> 
+                                         <p id="featuredCard1" style="height: 100px !important; margin-top: -10px; line-height: 20px;" class="feature-hover ">And Discover<span
+                                                style="color: #f2683f; font-weight: 600;">
+                                                <!-- <a href="https://calendly.com/ashiniqbal">Click</a>  -->
+                                                 <a>100+</a> features
+                                            </span> 
+                                            here waiting to transform your experience and management. <i
+                                            class="fas fa-arrow-right"></i>
+                                        </p>
                                         <!-- <img alt="arrowDown" onclick="changeStyles('featuredCard1', 'arrow1')" id="arrow1" style="height: 25px; width: 25px; cursor: pointer;" src="./assets/images/down-circular-button.svg"/> -->
                                         <div style="height: 25px;"></div>
                                     </div>
@@ -1196,7 +1199,7 @@
                             <a href="index.html"><img class="bg-transparent" src="assets/images/logos/logo-three.png"
                                     alt="Logo"></a>
                         </div>
-                        <p>Creating visionary schools for future with better management. </p>
+                        <p>Creating visionary schools for future with better management and. </p>
                         <div class="social-style-one pt-10">
                             <a href="contact.html"><i class="fab fa-facebook-f"></i></a>
                             <a href="contact.html"><i class="fab fa-twitter"></i></a>
@@ -1379,6 +1382,35 @@
                 readMoreBtn.innerHTML = "Read more";
             }
         }
+    </script>
+    <script>
+        // Array of texts to display
+        const texts = [
+            "School",
+            "Institution",
+            "Coaching Center",
+            // Add more texts as needed
+        ];
+    
+        // Get the element by its ID
+        const changingTextElement = document.getElementById('changingText');
+    
+        // Counter to keep track of the current text index
+        let currentIndex = 0;
+    
+        // Function to change the text every 3 seconds
+        function changeText() {
+            changingTextElement.textContent = texts[currentIndex];
+    
+            // Increment the index or reset to 0 if it reaches the end
+            currentIndex = (currentIndex + 1) % texts.length;
+        }
+    
+        // Initial call to start the text changing process
+        changeText();
+    
+        // Set an interval to call the function every 3 seconds
+        setInterval(changeText, 2000);
     </script>
 
 </body>
