@@ -438,18 +438,19 @@ main.sign-up-mode .carousel {
 .roledropdown select {
   width: 100%;
   padding: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #080808;
   border-radius: 5px;
   background-color: #fff;
   appearance: none; /* Remove default styles on some browsers */
   -webkit-appearance: none; /* Remove default styles on older WebKit browsers */
   -moz-appearance: none; /* Remove default styles on older Firefox browsers */
   cursor: pointer;
+  color: #080808;
 }
 
 /* Style the selected option */
 .roledropdown select option[selected] {
-  display: none; /* Hide the default "Select Role" option */
+  display: flex; /* Hide the default "Select Role" option */
 }
 
 /* Style the dropdown arrow */
@@ -460,11 +461,12 @@ main.sign-up-mode .carousel {
   right: 10px;
   transform: translateY(-50%);
   pointer-events: none; /* Make sure the arrow doesn't interfere with clicking the select */
+  
 }
 
 .roledropdown select option:hover {
   background-color: #FB653A;
-  color: white; /* Change text color for better visibility */
+  color: rgb(3, 3, 3); /* Change text color for better visibility */
 }
 
 
