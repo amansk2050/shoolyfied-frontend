@@ -9878,6 +9878,7 @@ blockquote {
   /* margin: 20px; */
   color: rgb(9, 95, 223);
   animation: fadeInUp 1s forwards;
+  
 }
 
 @keyframes fadeInUp {
@@ -9888,6 +9889,39 @@ blockquote {
   to {
       opacity: 1;
       transform: translateY(0);
+  }
+}
+
+#changingGradientText{
+  
+            background: linear-gradient(to right, rgb(9, 223, 152), #f2683f);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: changeGradient 5s infinite, changeColor 5s infinite;
+}
+@keyframes changeGradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+@keyframes changeColor {
+  0% {
+      color: #f2683f;
+  }
+  25% {
+    color: rgb(9, 95, 223);
+  }
+  50% {
+      color: rgb(9, 223, 152);
+  }
+  100% {
+      color: #f2683f;
   }
 }
 /* .readmoreStyle{
