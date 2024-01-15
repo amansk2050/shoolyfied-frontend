@@ -28,7 +28,7 @@
     <!--====== Magnific Popup ======-->
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <!--====== Nice Select ======-->
-    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/nice-select.min.css"> -->
     <!--====== jQuery UI ======-->
     <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
     <!--====== Animate ======-->
@@ -218,24 +218,37 @@
                                             required />
                                         <label>Password</label>
                                     </div>
-
-                                    <!-- Radio button for gender selection -->
-                                    <div class="input-wrap flex__form margin-bottom">
-                                        <div class="margin-top"><label>Select Organisation Type:</label></div>
-                                        <div class="radio__buttons">
-                                            <input type="radio" name="gender" value="male" required> Independent School
-                                            <input type="radio" name="gender" value="female" required> Group of Schools
-                                        </div>
-                                    </div>
                                     <div class="input-wrap">
                                         <input type="text" minlength="4" class="input-field" autocomplete="off"
                                             required />
                                         <label>Name of your Organisation</label>
                                     </div>
 
+                                    <!-- Radio button for gender selection -->
+                                    <div style="margin-bottom: 30px;" class="input-wrap flex__form margin-bottom">
+                                        <div class="margin-top"><label>Select Organisation Type:</label></div>
+                                        <div class="radio__buttons">
+                                            <input type="radio" name="gender" value="male" required> Independent School
+                                            <input style="margin-left: 15px;" type="radio" name="gender" value="female" required> Group of Schools
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- <label for="dropdown">Choose an option:</label> -->
+                                    <div style="font-size: 0.95rem; color: #bbb;">Choose an option:</div>
+                                    <select style="height: 45px !important; padding: 0px !important;" class="form-select form-select-sm" aria-label="Small select example">
+                                        <!-- <option selected>Open this select menu</option> -->
+                                        <option style="color: #bbb;" selected>Select Role</option>
+                                        <option class="bgselect" value="teacher">Teacher</option>
+                                        <option class="bgselect" value="student">Student</option>
+                                        <option class="bgselect" value="schoolAdmin">School Admin</option>
+                                        <option class="bgselect" value="principal">Principal</option>
+                                        <option class="bgselect" value="schoolOwner">School Owner</option>
+                                        <option class="bgselect" value="parent">Parent</option>
+                                      </select>
+
                                     <!-- Dropdown for selecting country -->
-                                    <div style="height: 40px;" class="dropdown__box input-wrap flex__form">
-                                        <div><label>Your role in the School:</label></div>
+                                    <!-- <div style="height: 40px;" class="dropdown__box input-wrap flex__form"> -->
+                                        <!-- <div><label>Your role in the School:</label></div>
                                         <div class="roledropdown margin-top">
                                             <select name="role" required>
                                                 <option value="" disabled selected>Select Role</option>
@@ -245,13 +258,19 @@
                                                 <option value="principal">Principal</option>
                                                 <option value="schoolOwner">School Owner</option>
                                                 <option value="parent">Parent</option>
-                                                <!-- Add more options as needed -->
+                                                
                                             </select>
-                                        </div>
-                                    </div>
+                                        </div> -->
+                                        <!-- <label for="dropdown">Choose an option:</label>
+                                        <select id="dropdown">
+                                            <option style="color: black;" value="option1">Option 1</option>
+                                            <option value="option2">Option 2</option>
+                                            <option value="option3">Option 3</option>
+                                        </select> -->
+                                    <!-- </div> -->
 
-                                    <input type="submit" value="Sign Up" class="sign-btn margin-top">
-                                    <p class="text">
+                                    <input type="submit" value="Sign Up" class="sign-btn mt-10">
+                                    <p style="font-size: 11px !important; color: rgb(59, 59, 59);" class="text">
                                         By signing up, I agree to the
                                         <a href="#">Terms of Services</a> and
                                         <a href="#">Privacy Policy</a>
@@ -318,8 +337,9 @@
                         <div class="hero-content-three pt-10 pb-100 rpt-40">
                             <span class="hero-sub-title mb-10 wow fadeInUp delay-0-2s"><span>1000+</span>
                                 Schools/Institutes</span>
-                            <h1 class="mb-25 wow fadeInUp delay-0-4s">Creating <span>visionary</span> <div id="changingText">schools</div>  for future
-                                with better management and <a id="changingGradientText" style="color: rgb(9, 95, 223);">AI Support</a>.</h1>
+                            <h1 class="mb-25 wow fadeInUp delay-0-4s">Creating <span>visionary</span>  <a style="color: rgb(23, 92, 219);">School</a> for future <!-- <div id="changingText">schools</div> CHANGING TEXT COMPONENT-->
+                                with better management and <a style="color: rgb(23, 92, 219);">AI Support</a></h1>
+                                
                             <!-- <ul class="list-style-one wow fadeInUp delay-0-6s">
                                 <li>Experts Advisors</li>
                                 <li>538+ Courses</li>
@@ -379,7 +399,7 @@
 
 
                 <!-- Advertise Area Start -->
-                <section class="advertise-area pt-130 rpt-100 pb-40 rpb-60">
+                <!-- <section class="advertise-area pt-130 rpt-100 pb-40 rpb-60">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6">
@@ -412,7 +432,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
                 <!-- Advertise Area End -->
 
                 <!-- services Features Section Start -->
@@ -1302,7 +1322,7 @@
     <!--====== Images Loader ======-->
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <!--====== Nice Select ======-->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- <script src="assets/js/jquery.nice-select.min.js"></script> -->
     <!--====== Magnific Popup ======-->
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <!--  WOW Animation -->
